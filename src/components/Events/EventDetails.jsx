@@ -5,6 +5,7 @@ import { useQuery, useMutation } from "@tanstack/react-query";
 import { fetchEvent, deleteEvent, queryClient } from "../utils/http.js";
 import Header from "../Header.jsx";
 import Modal from "../UI/Modal.jsx";
+import ErrorBlock from "../UI/ErrorBlock.jsx";
 
 export default function EventDetails() {
   const { id } = useParams();
